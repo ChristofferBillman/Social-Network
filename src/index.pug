@@ -1,0 +1,35 @@
+extends layout
+
+block main
+  main.d-flex.justify-content-center
+    .feed
+      h1 Feed
+      +post('Christoffer Billman', '21:50','Hej! Det här skulle man ju nästan kunna kalla den officiellt första inlägget här! Fantastiskt va?! Nu måste jag bara fixa php efter jag gjort alla mixins... Typ authentication och skit, login där allt är krypterat och hashat i guss :(((. kms lol. Nä skojar vi slutar de här positivt, man får göra lite varje dag så hinner man mycket till slut!')(src="images/christofferbillman.JPG")
+      +post('Olle Kaiser','20:32','wow den här skiten suger lol')(src="images/ollekaiser.jpg")
+
+block nav
+  nav.row.container-fluid.align-items-center
+    .logotype
+    a.menuitem Feed
+    a.menuitem Messaging
+    a.menuitem Profile
+    a.menuitem Setting
+
+mixin post(fullname,time,message,linktopic)
+  .post-module
+    .d-flex.person-module
+      .profilepicture
+        img(src!=attributes.src width="40px")
+      div
+        h6= fullname
+        .d-flex.align-items-baseline
+          p= time
+          .dot-separator
+          .public-icon
+          p Public
+    div
+      p= message
+
+
+
+  

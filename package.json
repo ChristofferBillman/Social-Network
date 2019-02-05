@@ -1,0 +1,17 @@
+{
+  "name": "bthpug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "jstransformer-markdown-it": "^2.1.0",
+    "pug": "^2.0.3",
+    "pug-code-gen": "^2.0.1"
+  }
+}
